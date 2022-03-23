@@ -3,7 +3,7 @@ header {
 }
 
 
-header .logo{
+.header__logo{
     border-radius: 50%;
     border: solid 1px var(--colorGrisClaro);
     width: 180px;
@@ -15,7 +15,7 @@ header .logo{
 
 }
 
-header button{
+.header__burger{
     width: 50px;
     padding: 5px;
     font-size: 32px;
@@ -26,4 +26,13 @@ header button{
     margin: 0 auto 30px;
     display: block;
     
+}
+
+.header__menu li{
+    width: 100%;
+    background-color: var(--colorGrisOscuro);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: solid 2px white;
 }
