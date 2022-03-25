@@ -48,8 +48,48 @@ body.home{
 .home__product__more{
     background-color: var(--colorGrisOscuro);
     display: inline-block;
-    margin: 10px;
+    margin: 10px 0;
     padding: 5px 0;
     text-align: center;
-    width: 80%;
+    width: 80px;
+}
+
+
+/*Tablets*/
+
+@media (min-width:460px){
+    /*este es el banner*/
+    .home__box-banner{
+        display: block;
+        margin-top: 30px;
+    }
+    .home__box-banner img{
+        width: 100%;
+    }
+    .home__box-products{
+        overflow: hidden;
+    }
+    .home__product{
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .home__product:nth-child(even){
+        margin-right: 0;
+    }
+}
+/*laptops*/
+@media (min-width:768px){
+    /*products*/
+    .home__product{
+        width: 32%;
+        margin-right: 2%;
+    }
+    .home__product:nth-child(even){
+        margin-right: 2%;
+    }
+    .home__product:nth-child(3n){
+        margin-right: 0;
+    }
 }
